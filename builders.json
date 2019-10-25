@@ -1,0 +1,10 @@
+{
+  "$schema": "./node_modules/@angular-devkit/architect/src/builders-schema.json",
+  "builders": {
+    "multi-builder": {
+      "implementation": "./builders/multiBuilder/multiBuilder",
+      "schema": "./builders/multiBuilder/schema.json",
+      "description": "Call multiple builders."
+    }
+  }
+}

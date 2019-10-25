@@ -1,0 +1,25 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "title": "Multi-Builder Target Options",
+    "description": "Multi-builder target options for Build Architect.",
+    "type": "object",
+    "properties": {
+      "targets": {
+        "type": "array",
+        "description": "An array containing the other builders to call."
+      },
+      "additionalTargets": {
+        "type": "array",
+        "description": "An array containing additional builders to call (for configurations)."
+      },
+      "runner": {
+        "type": "string",
+        "description": "The command runner for the solution (ng or nx)."
+      }
+    },
+    "additionalProperties": true,
+    "required": [
+      "targets"
+    ]
+  }
+  

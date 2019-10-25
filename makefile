@@ -1,0 +1,4 @@
+
+schematics:
+	yarn build;
+	
