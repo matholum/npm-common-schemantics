@@ -19,13 +19,13 @@
     "yargs": "^14.2.0"
   },
   "peerDependencies": {
+    "@nrwl/workspace": "^8.6.0"
+  },
+  "devDependencies": {
     "@angular-devkit/architect": "^0.803.7",
     "@angular-devkit/core": "8.3.3",
     "@angular-devkit/schematics": "8.3.3",
     "@angular-devkit/schematics-cli": "^0.803.6",
-    "@nrwl/workspace": "^8.6.0"
-  },
-  "devDependencies": {
     "@types/fs-extra": "^8.0.0",
     "@types/node": "^12.7.9",
     "@types/prettier": "^1.18.3",
