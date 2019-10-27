@@ -4,6 +4,8 @@
   "author": "Killian Hale",
   "license": "MIT",
   "builders": "./builders.json",
+  "main": "./bin/index.js",
+  "bin": "./bin/index.js",
   "scripts": {
     "build": "yarn lint:fix && yarn lint && yarn compile",
     "compile": "tsc -p tsconfig.json",
@@ -11,7 +13,9 @@
     "lint": "tslint -p tsconfig.json"
   },
   "dependencies": {
+    "commander": "^3.0.2",
     "fs-extra": "^8.1.0",
+    "globby": "^10.0.1",
     "observable-spawn": "^1.0.0",
     "prettier": "^1.18.2",
     "rxjs": "^6.5.3",
@@ -27,6 +31,7 @@
     "@angular-devkit/schematics": "8.3.3",
     "@angular-devkit/schematics-cli": "^0.803.6",
     "@types/fs-extra": "^8.0.0",
+    "@types/globby": "^9.1.0",
     "@types/node": "^12.7.9",
     "@types/prettier": "^1.18.3",
     "@types/underscore": "^1.9.3",

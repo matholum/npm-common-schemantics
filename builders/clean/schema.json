@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "title": "Clean Target Options",
+    "description": "Clean target options for Build Architect.",
+    "type": "object",
+    "properties": {
+      "paths": {
+        "type": "array",
+        "description": "An array containing the paths or globs to clean."
+      },
+      "additionalPaths": {
+        "type": "array",
+        "description": "An array containing additional paths or globs to clean (for configurations)."
+      }
+    },
+    "additionalProperties": true,
+    "required": [
+      "paths"
+    ]
+  }
+  
