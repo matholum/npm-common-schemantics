@@ -1,6 +1,11 @@
 {
   "$schema": "./node_modules/@angular-devkit/architect/src/builders-schema.json",
   "builders": {
+    "clean": {
+      "implementation": "./builders/clean/clean",
+      "schema": "./builders/clean/schema.json",
+      "description": "Clean paths and globs."
+    },
     "multi-builder": {
       "implementation": "./builders/multiBuilder/multiBuilder",
       "schema": "./builders/multiBuilder/schema.json",

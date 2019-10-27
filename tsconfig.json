@@ -15,7 +15,9 @@
     },
     "include": [
       "schematics/**/*",
-      "builders/**/*"
+      "builders/**/*",
+      "bin/*",
+      "scripts/**/*"
     ],
     "exclude": [
       "schematics/*/files/**/*"
