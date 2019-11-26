@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "id": "SchematicsMyService",
+  "title": "My Service Schema",
+  "type": "object",
+  "properties": {
+    "project": {
+      "type": "string",
+      "description": "The name of the project.",
+      "$default": {
+        "$source": "projectName"
+      }
+    },
+    "outputPath": {
+      "type": "string",
+      "description": "The directory to save resulting build VERSION files."
+    },
+    "overrideRoot": {
+      "type": "boolean",
+      "description": "Whether or not to override the root version and specify one for the project directly."
+    }
+  },
+  "required": ["project"]
+}

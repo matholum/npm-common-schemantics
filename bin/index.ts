@@ -4,7 +4,7 @@ import commander from 'commander';
 import * as fs from 'fs-extra';
 import * as path from 'path';
 
-const pkg = require('../package.json');
+import pkg from '../package.json';
 
 let loadPath = path.dirname(__filename);
 loadPath = loadPath.substring(0, loadPath.lastIndexOf('/'));

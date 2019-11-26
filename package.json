@@ -3,6 +3,7 @@
   "version": "0.0.4",
   "author": "Killian Hale",
   "license": "MIT",
+  "schematics": "./collection.json",
   "builders": "./builders.json",
   "main": "./bin/index.js",
   "bin": "./bin/index.js",
@@ -12,6 +13,14 @@
     "lint:fix": "tslint -p tsconfig.json --fix --quiet",
     "lint": "tslint -p tsconfig.json"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matholum/npm-common-schematics.git"
+  },
+  "bugs": {
+    "url": "https://github.com/matholum/npm-common-schematics/issues"
+  },
+  "homepage": "https://github.com/matholum/npm-common-schematics#readme",
   "dependencies": {
     "commander": "^3.0.2",
     "fs-extra": "^8.1.0",
@@ -23,13 +32,14 @@
     "yargs": "^14.2.0"
   },
   "peerDependencies": {
-    "@nrwl/workspace": "^8.6.0"
+    "@nrwl/workspace": "8.7.1"
   },
   "devDependencies": {
-    "@angular-devkit/architect": "^0.803.7",
+    "@angular-devkit/architect": "0.803.3",
     "@angular-devkit/core": "8.3.3",
     "@angular-devkit/schematics": "8.3.3",
-    "@angular-devkit/schematics-cli": "^0.803.6",
+    "@angular-devkit/schematics-cli": "0.803.3",
+    "@nrwl/workspace": "8.7.1",
     "@types/fs-extra": "^8.0.0",
     "@types/globby": "^9.1.0",
     "@types/node": "^12.7.9",

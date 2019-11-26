@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "title": "Clean Target Options",
+    "description": "Clean target options for Build Architect.",
+    "type": "object",
+    "properties": {
+      "projectPath": {
+        "type": "string",
+        "description": "The directory containing the project, specifically where a VERSION override file may be found"
+      },
+      "outputPath": {
+        "type": "string",
+        "description": "The directory to save the resulting version file"
+      }
+    },
+    "additionalProperties": true,
+    "required": [
+      "outputPath"
+    ]
+  }
+  
