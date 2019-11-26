@@ -1,0 +1,10 @@
+{
+    "$schema": "./node_modules/@angular-devkit/schematics/collection-schema.json",
+    "schematics": {
+      "version": {
+        "description": "Add versioning to a project.",
+        "factory": "./schematics/version/index",
+        "schema": "./schematics/version/schema.json"
+      }
+    }
+  }

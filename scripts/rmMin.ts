@@ -5,7 +5,7 @@ import * as path from 'path';
 import _ from 'underscore';
 
 export function removeMinifiedVendorFiles(dir: string) {
-    console.log(`Removing minified vendor files: ${dir}/node_modules`)
+    console.log(`Removing minified vendor files: ${dir}/node_modules`);
 
     const files = globby.sync([
         `${dir}/node_modules/**/*.min.js`,

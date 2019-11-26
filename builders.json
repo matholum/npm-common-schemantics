@@ -10,6 +10,11 @@
       "implementation": "./builders/multiBuilder/multiBuilder",
       "schema": "./builders/multiBuilder/schema.json",
       "description": "Call multiple builders."
+    },
+    "set-build-version": {
+      "implementation": "./builders/buildVersionSetter/buildVersionSetter",
+      "schema": "./builders/buildVersionSetter/schema.json",
+      "description": "Create a build version file."
     }
   }
 }
