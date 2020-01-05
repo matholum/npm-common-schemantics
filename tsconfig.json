@@ -12,7 +12,8 @@
       "declaration": true,
       "target": "es6",
       "esModuleInterop": true,
-      "resolveJsonModule": true
+      "resolveJsonModule": true,
+      "listEmittedFiles": true
     },
     "include": [
       "schematics/**/*",
